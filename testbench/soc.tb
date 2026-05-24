@@ -1,0 +1,37 @@
+module soc_tb;
+
+logic clk;
+logic rst;
+
+logic uart_tx_line;
+
+cpu_top DUT(
+    .clk(clk),
+    .rst(rst),
+    .uart_tx_line(uart_tx_line)
+);
+
+always #5 clk = ~clk;
+
+initial begin
+
+    clk = 0;
+    rst = 1;
+
+    #20;
+    rst = 0;
+
+    #500;
+
+    $finish;
+
+end
+
+initial begin
+
+    $dumpfile("soc.vcd");
+    $dumpvars(0, soc_tb);
+
+end
+
+endmodule
