@@ -1,7 +1,7 @@
 🛡️ Secure Shield RISC-V Firewall & UART Security System
 🚀 Overview
 
-Sun Shield RISC-V Project is a hardware-oriented cybersecurity platform built around the RISC-V open instruction set architecture.
+Secure Shield RISC-V Project is a hardware-oriented cybersecurity platform built around the RISC-V open instruction set architecture.
 The project integrates:
 
 🔥 Hardware Firewall Mechanisms
